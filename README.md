@@ -1,10 +1,10 @@
 ##### swoole加速lumen 简单demo
 ###### 安装 composer install
-###### 启动 php server/Websocket.php
 ###### vim /etc/hosts
  ```
  127.0.0.1 sw.lumen.cn
  ```
+###### 启动 php server/Websocket.php
 ###### 访问：http://sw.lumen.cn/index
 ###### 热加载 sh swoole_reload.sh  
 ###### 参考资料
