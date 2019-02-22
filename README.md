@@ -1,3 +1,9 @@
+##### swoole加速lumen 简单demo
+###### 启动 php server/Websocket.php
+###### 热加载 sh swoole_reload.sh  
+###### Nginx 配置参考
+```
+//swoole转发模式
 server {
 
     listen 80;
@@ -8,17 +14,18 @@ server {
     location / {
 
         root /var/www/sw-lumen/public;
-        index index.html index.htm;
+        index index.html index.htm index.php;
 
         if (!-e $request_filename) {
-             proxy_pass http://172.18.0.2:8888;
+            //代理地址
+            proxy_pass http://172.18.0.2:8888;
         }
 
     }
-
 }
-
-
+```
+```
+//fpm模式
 server {
 
     listen 80;
@@ -41,5 +48,7 @@ server {
     }
 
 }
+```
 
+å
 
