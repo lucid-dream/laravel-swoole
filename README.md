@@ -1,6 +1,11 @@
 ##### swoole加速lumen 简单demo
+###### 安装 composer install
 ###### 启动 php server/Websocket.php
 ###### 热加载 sh swoole_reload.sh  
+###### 参考资料
+```
+https://laravel-news.com/laravel-swoole
+```
 ###### Nginx 配置参考
 ```
 //swoole转发模式
